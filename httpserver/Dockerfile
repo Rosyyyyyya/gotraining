@@ -18,3 +18,5 @@ CMD [ "/runhttp" ]
 # docker build --tag runhttp .
 # docker run --publish 80:80 runhttp
 # curl http://localhost/header
+# docker inspect 14d0cca41040 | grep -i pid
+# nsenter -t #pid -n ip a
